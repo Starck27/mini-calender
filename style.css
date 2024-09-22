@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.lang-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lang-select svg {
+  width: 3rem;
+  height: 3rem;
+  fill: #e0e0e0;
+}
+
+select {
+  width: 200px;
+  height: 2.5rem;
+  cursor: pointer;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 5px;
+  color: #e0e0e0;
+  font-size: 1rem;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+select:hover {
+  background-color: #444;
+}
+
+.calender-container {
+  background-color: #1e1e1e;
+  width: 20rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.month-name {
+  background-color: #6200ea;
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.day-name {
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  color: #b0bec5;
+}
+
+.day-number {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #bb86fc;
+}
+
+.year {
+  margin: 20px 0;
+  font-size: 1.25rem;
+  color: #b0bec5;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem; /* Add padding for smaller screens */
+  }
+
+  .calender-container {
+    width: 90%; /* Adjust width to 90% on medium screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Smaller font size for the title */
+  }
+
+  .day-number {
+    font-size: 4rem; /* Smaller font size for the day number */
+  }
+
+  .month-name {
+    font-size: 1.75rem; /* Smaller font size for the month name */
+  }
+
+  .day-name {
+    font-size: 1rem; /* Smaller font size for the day name */
+  }
+
+  select {
+    width: 100%; /* Full width for the select dropdown */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem; /* Less padding for small screens */
+  }
+
+  .calender-container {
+    width: 100%; /* Full width on small screens */
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Even smaller font size for the title */
+  }
+
+  .day-number {
+    font-size: 3rem; /* Smaller font size for the day number */
+  }
+
+  .month-name {
+    font-size: 1.5rem; /* Smaller font size for the month name */
+  }
+
+  .day-name {
+    font-size: 0.9rem; /* Smaller font size for the day name */
+  }
+
+  select {
+    height: 2rem; /* Reduce height for the select dropdown */
+  }
+
+  .lang-select svg {
+    width: 2.5rem; /* Smaller icon size */
+    height: 2.5rem;
+  }
+}
