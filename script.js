@@ -2,8 +2,9 @@ const monthNameElement = document.getElementById("month-name");
 const dayNameElement = document.getElementById("day-name");
 const dayNumberElement = document.getElementById("day-number");
 const yearElement = document.getElementById("year");
+const languageElement = document.getElementById("language");
 
-const language = "id";
+const defaultLanguage = "en";
 
 function updateCalender(language) {
   const date = new Date();
@@ -21,4 +22,9 @@ function updateCalender(language) {
   });
 }
 
-updateCalender(language);
+updateCalender(defaultLanguage);
+
+languageElement.addEventListener("change", (e) => {
+  const selectedLanguage = e.target.value;
+  updateCalender(selectedLanguage);
+});
