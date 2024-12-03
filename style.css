@@ -12,7 +12,6 @@ body {
   height: 100vh;
   font-family: "Helvetica Neue", Arial, sans-serif;
   background-color: #121212;
-  color: #e0e0e0;
 }
 
 h1 {
@@ -20,6 +19,37 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+}
+
+.lang-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lang-select svg {
+  width: 3rem;
+  height: 3rem;
+  fill: #e0e0e0;
+}
+
+select {
+  width: 12.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 5px;
+  color: #e0e0e0;
+  font-size: 1rem;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+select:hover {
+  background-color: #444;
 }
 
 .calender-container {
